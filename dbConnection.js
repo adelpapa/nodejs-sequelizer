@@ -23,15 +23,11 @@ var User = sequelize.import(__dirname + "/models/imagen")
 //    jobId: 1
 //})
 
-
-
-
-User.findOne().then(function(user) {
-    console.log(user.dataValues);
-    console.log('ahora si');
-    console.log(user.job.dataValues);
-    
-});
+//User.findOne().then(function(user) {
+//    console.log(user.dataValues);
+//    console.log('ahora si');
+//    console.log(user.job.dataValues);    
+//});
 
 /*Job.findAll().then(function(jobs) {
     for(var i = 0; i < jobs.length; i++) {
