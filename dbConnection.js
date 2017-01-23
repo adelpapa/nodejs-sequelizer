@@ -5,6 +5,8 @@ var properties = PropertiesReader('../application.properties');
 var sequelize = new Sequelize(properties.get('database.url'));
 var User = sequelize.import(__dirname + "/models/usuario")
 var User = sequelize.import(__dirname + "/models/categoria")
+var User = sequelize.import(__dirname + "/models/atributo")
+var User = sequelize.import(__dirname + "/models/imagen")
 
 
 

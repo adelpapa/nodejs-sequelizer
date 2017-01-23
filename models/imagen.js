@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-    var Atributo = sequelize.define('atributo', {
+    var Imagen = sequelize.define('imagen', {
         id: {
             type: DataTypes.INTEGER,
             autoIncrement: true,
@@ -10,8 +10,12 @@ module.exports = function(sequelize, DataTypes) {
         },
         descripcion: {
             type: DataTypes.STRING
+        },
+        url: {
+            type: DataTypes.STRING,
+            isUrl: true
         }
     });
     
-    return Atributo;
+    return Imagen;
 }
